@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior year portfolios</title>
     <link rel="stylesheet" href="style.css">
+
 <style>
+/* Center the gallery items */
+.gallery {
+  display: flex;
+  justify-content: center;   /* centers images horizontally */
+  align-items: center;        /* aligns vertically */
+  gap: 20px;                  /* spacing between images */
+  flex-wrap: wrap;            /* allows images to wrap on small screens */
+}
+
 div.gallery-item {
   margin: 5px;
   border: 1px solid #ccc;
@@ -25,38 +35,58 @@ div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
 }
+
+/* Optional: make your navigation links look nicer */
+a {
+  margin-right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
 </style>
 </head>
+
 <body>
 
-	<div></div>
     <a href="cfu.html">CFU</a>
     <a href="projects.html">Projects</a>
-	<a href="infyapp.html">InfyApp </a>
-	<div class="bio">
-	<p>  Welcome to my junior portflio!!, My name is Evelyn Say I'am a 11th garde web designer, this is all on what I've been working for the last months of my junior year from cfu to projects. And the things i was able to improve on.</p>
-</div>
+    <a href="infyapp.html">InfyApp</a>
 
-<h2>Image Gallery</h2>
+    <div class="bio">
+        <p>
+            Welcome to my junior portflio!! My name is Evelyn Say.  
+            I am an 11th grade web designer. This is everything I've been working  
+            on the last months of my junior year — from CFU to projects —  
+            and the improvements I've made along the way.
+        </p>
+    </div>
 
-<div class="gallery">
+    <h2 style="text-align:center;">Image Gallery</h2>
 
-<div class="gallery-item">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="photos/nova.jpg" alt="Nova" width="600" height="400">
-  </a>
-  <div class="desc">Nova App</div>
-</div>
+    <div class="gallery">
 
-<div class="gallery-item">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="photos/love_pets.png" alt="Loved pets" width="600" height="400">
-  </a>
-  <div class="desc">Loved petst</div>
-</div>
+        <div class="gallery-item">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="photos/nova.jpg" alt="Nova">
+          </a>
+          <div class="desc">Nova App</div>
+        </div>
 
+        <div class="gallery-item">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="photos/love_pets.png" alt="Loved pets">
+          </a>
+          <div class="desc">Loved Pets</div>
+        </div>
 
-</div>
+    </div>
 
 </body>
 </html>
