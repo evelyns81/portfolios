@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior year portfolios</title>
-    <link rel="stylesheet" href="style.css">
 
 <style>
-/* ===== Banner Style ===== */
 .banner {
   width: 100%;
   background: linear-gradient(135deg, #6a5acd, #836fff);
@@ -36,11 +34,13 @@
   margin: 5px;
   border: 1px solid #ccc;
   width: 180px;
-  cursor: pointer; /* makes it look clickable */
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .gallery-item:hover {
   border: 1px solid #777;
+  transform: scale(1.04);
 }
 
 .gallery-item img {
@@ -54,7 +54,7 @@
 }
 
 /* ===== Navigation Links ===== */
-a {
+a.nav-link {
   margin-right: 15px;
   font-size: 18px;
   text-decoration: none;
@@ -78,9 +78,9 @@ a {
     </div>
 
     <!-- Navigation -->
-    <a href="cfu.html">CFU</a>
-    <a href="projects.html">Projects</a>
-    <a href="infyapp.html">InfyApp</a>
+    <a class="nav-link" href="cfu.html">CFU</a>
+    <a class="nav-link" href="projects.html">Projects</a>
+    <a class="nav-link" href="infyapp.html">InfyApp</a>
 
     <div class="bio">
         <p>
@@ -95,12 +95,13 @@ a {
 
     <div class="gallery">
 
+        <!-- Nova App -->
         <div class="gallery-item" onclick="window.location='nova.html'">
             <img src="photos/nova.jpg" alt="Nova">
             <div class="desc">Nova App</div>
         </div>
 
-        <!-- Loved Pets (still normal) -->
+        <!-- Loved Pets -->
         <div class="gallery-item" onclick="window.location='lovedpets.html'">
             <img src="photos/love_pets.png" alt="Loved pets">
             <div class="desc">Loved Pets</div>
@@ -110,11 +111,3 @@ a {
 
 </body>
 </html>
-
-
-    </div>
-
-</body>
-</html>
-
-
