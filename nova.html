@@ -8,18 +8,22 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     background-color: #f7f7f7;
 }
 
-h1 {
+.banner {
+    background: linear-gradient(135deg, #6a5acd, #836fff);
+    color: white;
+    padding: 30px 0;
     text-align: center;
-    color: #4b3db9;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -37,24 +41,43 @@ p {
     line-height: 1.6;
     text-align: center;
 }
+
+/* Back button */
+.back-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    background: #6a5acd;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #5947d2;
+}
 </style>
 </head>
 
 <body>
 
-    <h1>Nova App</h1>
+    <div class="banner">Nova App</div>
 
     <div class="container">
         <img src="photos/nova.jpg" alt="Nova App">
 
         <p>
             The Nova App is one of my featured projects.  
-            Here you can describe what the app does, the tools you used,  
-            what you learned, and screenshots or features of the app.
+            Here you can describe what the app does, what tools you used,  
+            challenges you solved, and what you learned.
         </p>
     </div>
 
+    <a href="index.html" class="back-btn"> Back to Portfolio</a>
+
 </body>
 </html>
-
-
