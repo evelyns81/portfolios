@@ -1,19 +1,35 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior year portfolios</title>
     <link rel="stylesheet" href="style.css">
- <h1>My senior porfolio</h1>
 
 <style>
+/* ===== Banner Style ===== */
+.banner {
+  width: 100%;
+  background: linear-gradient(135deg, #6a5acd, #836fff); /* purple gradient */
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* ===== Gallery Styles ===== */
 .gallery {
   display: flex;
-  justify-content: center;   /* centers images horizontally */
-  align-items: center;        /* aligns vertically */
-  gap: 20px;                  /* spacing between images */
-  flex-wrap: wrap;            /* allows images to wrap on small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 div.gallery-item {
@@ -36,7 +52,7 @@ div.gallery-item div.desc {
   text-align: center;
 }
 
-/* Optional: make your navigation links look nicer */
+/* ===== Navigation Links ===== */
 a {
   margin-right: 15px;
   font-size: 18px;
@@ -55,13 +71,19 @@ a {
 
 <body>
 
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Senior Portfolio</h1>
+    </div>
+
+    <!-- Navigation -->
     <a href="cfu.html">CFU</a>
     <a href="projects.html">Projects</a>
     <a href="infyapp.html">InfyApp</a>
 
     <div class="bio">
         <p>
-            Welcome to my junior portflio!! My name is Evelyn Say.  
+            Welcome to my junior portfolio!! My name is Evelyn Say.  
             I am an 11th grade web designer. This is everything I've been working  
             on the last months of my junior year — from CFU to projects —  
             and the improvements I've made along the way.
